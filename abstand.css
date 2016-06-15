@@ -6,6 +6,9 @@ p {
       text-align: center;
 }
 
+#indexheader{
+  color: white;
+}
 /* general styles */
 html, body {
   height: 100%;
@@ -35,7 +38,7 @@ html, body {
 
 /* additional sections */
 #home {
-  background: url(imagenes/index/mundo.jpg) no-repeat center center fixed;
+  background: url(imagenes/index/space1.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -66,7 +69,7 @@ html, body {
 }
 
 #information {
-  background: url(../images/estate.jpg) no-repeat center center fixed;
+  background: url(imagenes/index/space2.jpg) no-repeat center center fixed;
   display: table;
   height: 800px;
   position: relative;
