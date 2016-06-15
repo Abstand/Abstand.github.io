@@ -9,6 +9,7 @@ p {
 
 #indexheader{
   color: white;
+  text-shadow: -1px 0 black, 0 1.2px black, 1.2px 0 black, 0 -1px black;
   font-family: 'Raleway', sans-serif;
 }
 /* general styles */
@@ -54,12 +55,16 @@ html, body {
 }
 
 #about {
+background-image: url(imagenes/index/quienessomos.jpg);
+color: white;
+border-style: solid; border-width: 2.5px;
+border-color: black;
 }
 
 #propuestas {
   background-image: url(imagenes/index/propuestas.jpg);
   color: #ffffff;
-  border-style: solid; border-width: 4px;
+  border-style: solid; border-width: 2.5px;
  border-color: black;
 }
 #propuestas .glyphicon {
