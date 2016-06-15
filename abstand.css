@@ -36,6 +36,8 @@ html, body {
   padding: 0;
 }
 
+
+
 /* additional sections */
 #home {
   background: url(imagenes/index/space1.jpg) no-repeat center center fixed;
@@ -52,11 +54,13 @@ html, body {
 #about {
 }
 
-#services {
-  background-color: #306d9f;
+#propuestas {
+  background-image: url(imagenes/index/propuestas.jpg);
   color: #ffffff;
+  border-style: solid; border-width: 4px;
+ border-color: black;
 }
-#services .glyphicon {
+#propuestas .glyphicon {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
   display: inline-block;
