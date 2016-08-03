@@ -94,17 +94,13 @@ border-color: black;
   opacity: 0.85;
 }
 
-#google_map {
-  height: 500px;
-}
-
 /*Slider de propuestas!*/
 * {
      box-sizing: border-box;
    }
 
    .slider {
-       width: 50%;
+       width: 80%;
        margin: 100px auto;
    }
 
@@ -118,7 +114,7 @@ border-color: black;
 
    .slick-prev:before,
    .slick-next:before {
-       color: black;
+       color: white;
    }
 
 footer {
