@@ -4,7 +4,7 @@
   <title>Abstand</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <script src="jquery.js"></script>
+  <script src="js/jquery.js"></script>
   <!--CSS de la página -->
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,7 +16,8 @@
 </head>
 <body>
 <header>
-  <!-- navigation panel -->
+  <!-- navbar para móviles-->
+  <div class="hidden-lg hidden-md hidden-sm visible-xs">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,14 +37,44 @@
         <li><a href="#">¿Quiénes somos?</a></li>
         <li><a href="#">Noticias</a></li>
         <li><a href="#">Contactanos</a></li>
-        <li><a href="https://www.facebook.com/p.abstand" target="_blank"  class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-        <li> <a data-toggle="modal" data-target="#snap"  class="icoSnapChat" title="Snapchat"><i class="fa fa-snapchat"></i></a></li>
-        <li><a href="https://www.twitter.com/p_abstand" target="_blank"  class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.instagram.com/p_abstand/" target="_blank"  class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-  </nav>
+</nav>
+</div> <!-- Fin navegacion moviles-->
+
+<!-- navegacion compus-->
+ <div class="visible-lg visible-md visible-sm hidden-xs">
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container-fluid">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-abstand">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="#"><img class="img-responsive" src="imagenes/logo.png" width="50" height="50"></a>
+     </div>
+
+     <div class="collapse navbar-collapse" id="navbar-abstand">
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href="#">Inicio</a></li>
+         <li><a href="#">¿Quiénes somos?</a></li>
+         <li><a href="#">Noticias</a></li>
+         <li><a href="#">Contactanos</a></li>
+        <li><a href="https://www.facebook.com/p.abstand" target="_blank"  class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+         <li> <a data-toggle="modal" data-target="#snap"  class="clickable" title="Snapchat"><i class="fa fa-snapchat"></i></a></li>
+         <li><a href="https://www.twitter.com/p_abstand" target="_blank"  class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.instagram.com/p_abstand/" target="_blank"  class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+
+       </ul>
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+ </nav>
+</div>
 
   <!-- Snap -->
   <div class="modal fade" id="snap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
@@ -159,7 +190,18 @@
 <!-- fifth section PATROCINIOS  -->
 
 <div id="propuestas" class="pad-section">
+  <span class="visible-xs ">
 
+      <h2 align="center">Síguenos en nuestras redes sociales</h2>
+    <center>    <div class="col-md-12">
+                      <ul class="social-network social-circle">
+                          <li><a id="face" href="https://www.facebook.com/p.abstand" class="icoFacebook" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                          <li><a id="Snap"data-toggle="modal" data-target="#snap"  class="clickable" title="Snapchat"><i class="fa fa-snapchat"></i></a></li>
+                          <li><a id="twit" href="https://www.twitter.com/p_abstand" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                          <li><a id="Insta" href="https://www.instagram.com/p_abstand/" target="_blank" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+          </div> </center>
+        </span>
   <h2 class="text-center"> Nuestros patrocinadores </h2>
 
 <section class="autoplay slider">
@@ -194,8 +236,6 @@
 
 
 
-<!-- /fifth section -->
-
 <!-- google map -->
 <div id="contacto"></div>
 <!-- /google map -->
@@ -210,7 +250,7 @@
 <!-- /footer -->
 
 <!--Scripts de la página -->
-<script src="bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="slick-1.6.0/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
   $(document).on('ready', function() {
